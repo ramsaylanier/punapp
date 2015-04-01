@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+.main {
+  padding-top: 75px; }
+
 .header {
   position: fixed;
   width: 100%;
@@ -19,7 +22,6 @@
   color: white; }
 
 .twitter-icon {
-  float: left;
   height: 20px;
   margin-right: 10px; }
   .twitter-icon path {
@@ -30,6 +32,6 @@
   padding: 10px;
   background-color: white; }
 
-.username {
+.account-link {
   color: white;
   text-decoration: none; }

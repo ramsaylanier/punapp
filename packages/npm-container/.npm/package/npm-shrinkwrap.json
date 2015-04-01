@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "user-stream": {
+      "version": "0.0.6",
+      "dependencies": {
+        "oauth": {
+          "version": "0.9.8"
+        }
+      }
+    }
+  }
+}
