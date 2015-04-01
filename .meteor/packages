@@ -9,3 +9,5 @@ iron:router
 accounts-password
 accounts-twitter
 service-configuration
+jparker:crypto-base64
+ramsay:errors
