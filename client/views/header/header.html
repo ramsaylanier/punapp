@@ -1,16 +1,18 @@
 <template name="header">
-	<header class="header">
+	{{#donutHeader headerOptions}}
 		<div class="wrapper">
-			<p class="branding">Pun App</p>
+			{{#donutNav type='left'}}
+				<a href="/" class="branding transition-link">Pun App</a>
+			{{/donutNav}}
 
-			<nav class="nav-right nav">
+			{{#donutNav type='right'}}
 				{{#if currentUser}}
-					<a href="#" class="account-link username">{{username}}</a>
+					<a href="/{{username}}" class="account-link transition-link username">{{username}}</a>
 					<a href="#" class="account-link logout-link">Logout</a>
 				{{else}}
 					<a href="#" class="btn twitter-login-link">{{>twitterIcon}}Login</a>
 				{{/if}}
-			</nav>
+			{{/donutNav}}
 		</div>
-	</header>
+	{{/donutHeader}}
 </template>

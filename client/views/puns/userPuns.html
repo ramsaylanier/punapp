@@ -1,13 +1,18 @@
 <template name="userPuns">
-	<h1>{{username}}</h1>
+	{{#page pageOptions}}
+		<div class="page-header">
+			<h1 class="page-title"><a href="http://twitter.com/{{username}}" target="_blank">@{{username}}</a></h1>
+			<button class="page-cta btn primary-btn get-user-tweets-btn">Refresh Puns</button>
+		</div>
 
-	<button class="get-user-tweets-btn">Get Puns</button>
-
-	{{#if puns}}
-		{{#each puns}}
-			{{> punSingle}}
-		{{/each}}
-	{{/if}}
+		{{#if puns}}
+			<ul class="pun-list">
+			{{#each puns}}
+				{{> punSingle}}
+			{{/each}}
+			</ul>
+		{{/if}}
+	{{/page}}
 </template>
 
 

@@ -29,6 +29,13 @@ Template.header.events({
 })
 
 Template.header.helpers({
+	headerOptions: function(){
+		var defaultOptions = getDefaultPageOptions();
+		var headerOptions = {animateIn: "swingIn", animateOut: 'fadeOut'};
+		var options = _.extend(defaultOptions, headerOptions);
+
+		return options;
+	},
 	username: function(){
 		return Meteor.user().username;
 	}

@@ -1,0 +1,11 @@
+.donut-nav{
+	position: fixed;
+
+	&.bottom-nav{
+		bottom: 0;
+	}
+
+	&.top-nav{
+		top: 0;
+	}
+}
