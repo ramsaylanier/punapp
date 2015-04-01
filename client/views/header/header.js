@@ -10,14 +10,14 @@ Template.header.events({
 			else{
 				var username = Meteor.user().username;
 
-				Meteor.call('getTwitterStream', username, function(error, result){
-					if (error){
-						Errors.throw(error.reason, 'error');
-						console.log(error);
-					} else {
-						console.log(result);
-					}
-				});
+				// Meteor.call('getTwitterStream', username, function(error, result){
+				// 	if (error){
+				// 		Errors.throw(error.reason, 'error');
+				// 		console.log(error);
+				// 	} else {
+				// 		console.log(result);
+				// 	}
+				// });
 
 				Router.go('/' + username);
 			}
