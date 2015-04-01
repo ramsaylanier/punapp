@@ -14,7 +14,9 @@ Template.userPuns.events({
 
 Template.userPuns.helpers({
 	username: function(){
-		console.log(Router.current().params);
 		return Router.current().params.username;
+	},
+	puns: function(){
+		return Puns.find({username: Router.current().params.username})
 	}
 })
