@@ -14,6 +14,10 @@
   color: white;
   float: left; }
 
+.nav.nav-right {
+  float: right;
+  color: white; }
+
 .twitter-icon {
   float: left;
   height: 20px;
@@ -22,7 +26,10 @@
     fill: black; }
 
 .twitter-login-link {
-  float: right;
   color: black;
   padding: 10px;
   background-color: white; }
+
+.username {
+  color: white;
+  text-decoration: none; }

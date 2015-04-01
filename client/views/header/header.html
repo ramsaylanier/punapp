@@ -2,7 +2,14 @@
 	<header class="header">
 		<div class="wrapper">
 			<p class="branding">Pun App</p>
-			<a href="#" class="btn twitter-login-link">{{>twitterIcon}}Login</a>
+
+			<nav class="nav-right nav">
+				{{#if currentUser}}
+					<a href="#" class="account-link username">{{username}}</a>
+				{{else}}
+					<a href="#" class="btn twitter-login-link">{{>twitterIcon}}Login</a>
+				{{/if}}
+			</nav>
 		</div>
 	</header>
 </template>
