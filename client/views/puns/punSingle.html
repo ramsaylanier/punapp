@@ -1,5 +1,11 @@
 <template name="punSingle">
 	<li class="pun">
-		{{punText}}
+		<p class="pun-content">
+			{{punText}}
+
+			{{#if publicList}}
+				- by <a href="/{{username}}" class="pun-author transition-link">{{username}}</a>
+			{{/if}}
+		</p>
 	</li>
 </template>

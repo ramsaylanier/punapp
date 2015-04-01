@@ -21,6 +21,15 @@ body{
 	}
 }
 
+.pun-content{
+	margin: 0;
+}
+
+.pun-author{
+	color: $red;
+	border-bottom: 2px solid $red;
+}
+
 .title{
 	float: left;
 }

@@ -318,6 +318,13 @@ body {
     background-color: #e6e6e6;
     margin-bottom: 1rem; }
 
+.pun-content {
+  margin: 0; }
+
+.pun-author {
+  color: #d83737;
+  border-bottom: 2px solid #d83737; }
+
 .title {
   float: left; }
 
@@ -330,5 +337,5 @@ body {
 .primary-btn {
   font-size: 1.3rem;
   font-weight: 100;
-  background-color: red;
+  background-color: #d83737;
   color: white; }
