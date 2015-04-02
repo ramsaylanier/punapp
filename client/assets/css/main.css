@@ -325,7 +325,8 @@ body {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    opacity: 0; }
 
 .pun-content {
   margin: 0;
@@ -384,3 +385,6 @@ body {
   font-weight: 100;
   background-color: #d83737;
   color: white; }
+
+.show-more-awards {
+  opacity: 0; }

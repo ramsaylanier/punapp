@@ -36,13 +36,18 @@ Template.page.events({
 		var data = template.data;
 		var url = $(e.currentTarget).attr('href');
 
-		//close menu if it's open
-		if (Session.get('shelfState') !== 'notActive'){
-			donutStates.closeShelfState();
-		}
+		if (url == window.location.pathname){
+			return false;
+		} else {
 
-		animationType = data.animateOut || 'slideOutToLeft';
-		donutAnimation.findAnimation(options, animationType, page, url);
+			//close menu if it's open
+			if (Session.get('shelfState') !== 'notActive'){
+				donutStates.closeShelfState();
+			}
+
+			animationType = data.animateOut || 'slideOutToLeft';
+			donutAnimation.findAnimation(options, animationType, page, url);
+		}
 	},
 	'click .modal-trigger': function(e){
 		e.preventDefault();

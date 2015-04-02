@@ -1,6 +1,5 @@
 <template name="punSingle">
-	{{#donutItem}}
-	<li class="pun">
+	{{#donutItem itemOptions}}
 		<p class="pun-content">
 			{{punText}}
 
@@ -16,6 +15,5 @@
 		</p>
 
 		<span class="pun-date">{{punCreatedAt}}</span>
-	</li>
 	{{/donutItem}}
 </template>

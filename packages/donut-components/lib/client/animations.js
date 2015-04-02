@@ -102,13 +102,15 @@ donutTransition = {
 	slideInFromTop_Short: function(element){
 		return {"translateY": [0, "-20px"], opacity: [1, 0]};
 	},
-
 	slideInFromBottom: function(element){
 		element.velocity({
 			"translateY": "100vh", 
 		}, 0);
 
 		return {"translateY": 0};
+	},
+	slideInFromBottom_Short: function(element){
+		return {"translateY": [0, "20px"], opacity: [1, 0]};
 	},
 
 	slideOutToLeft: function(){
