@@ -1,5 +1,6 @@
 <template name="punsList_public">
 	<ul class="pun-list public-list">
+		{{> search}}
 		{{#each this}}
 			{{>punSingle context}}
 		{{/each}}

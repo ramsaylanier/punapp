@@ -1,0 +1,19 @@
+<template name="search">
+    {{> esInput index="puns" placeholder="Search..." }}
+
+    <ul>
+        {{#esEach index="puns"}}
+            {{> punSingle}}
+        {{/esEach}}
+    </ul>
+
+    {{> esLoadMoreButton index="puns"}}
+
+    {{#ifEsHasNoResults index="puns"}}
+        <div class="no-results">No results found!</div>
+    {{/ifEsHasNoResults}}
+
+    {{#ifEsIsSearching index="puns"}}
+            <div>Loading...</div>
+    {{/ifEsIsSearching}}
+</template>
