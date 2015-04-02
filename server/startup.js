@@ -14,4 +14,24 @@ Meteor.methods({
 
 Meteor.startup(function(){
 	ServiceConfiguration.configurations.remove();
-})
+
+	if (Puns.find().count() < 300){
+		var counter = 0;
+
+		while(counter < 300){
+			console.log(counter);
+			Factory.create('pun', {
+				username: Fake.user({fields: ['username']}).username,
+				punText: Fake.paragraph(1),
+				punCreatedAt: randomDate(new Date(2012, 0, 1), new Date()),
+				categories: [Fake.fromArray(['dadjoke', 'pants', 'cats', 'dogs', 'fartjokes'])]
+			});
+
+			counter++;
+		}
+	}
+});
+
+function randomDate(start, end) {
+    return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+}

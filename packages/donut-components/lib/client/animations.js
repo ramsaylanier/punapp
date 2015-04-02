@@ -76,8 +76,6 @@ donutAnimation = {
 		var duration = options.duration || 500;
 		var easing = options.easing || 'easeOut';
 
-		console.log(typeof(transition));
-
 		if (typeof(transition) == 'string'){
 			transition = donutTransition[transition](element);
 		}

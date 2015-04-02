@@ -7,5 +7,11 @@
 				- by <a href="/{{username}}" class="pun-author transition-link">{{username}}</a>
 			{{/if}}
 		</p>
+
+		<ul class="category-list">
+			{{#each categories}}
+				<li><a href="/category/{{this}}">{{this}}</a></li>
+			{{/each}}
+		</ul>
 	</li>
 </template>
