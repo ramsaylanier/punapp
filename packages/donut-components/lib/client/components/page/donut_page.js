@@ -18,6 +18,7 @@ Template.page.onCreated(function(){
 });
 
 Template.page.onRendered(function(){
+	console.log('page-render');
 	page = this.$('.page');
 	options = Session.get('pageOptions');
 	animationType = options.animateIn || 'slideInFromRight';

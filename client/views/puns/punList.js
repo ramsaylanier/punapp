@@ -12,8 +12,6 @@ Template.punList.created = function(){
     var limit = Session.get('limit');
     var category = Session.get('category');
 
-    console.log(category);
-
     instance.category.set(category);
 
     if (instance.category.get() !== null){
