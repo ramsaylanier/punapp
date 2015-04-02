@@ -7,12 +7,12 @@
         <ul class="pun-list">
             <li class="pun">
                 <p class="pun-content">
-                    {{> esInput index="puns" placeholder="Search..." class="search-bar" }}
+                    <form>{{> esInput index="puns" placeholder="Search..." class="search-bar" }}</form>
                 </p>
             </li>
 
             {{#esEach index="puns"}}
-                {{> punSingle}}
+                {{> punSingle context}}
             {{/esEach}}
             
             {{> esLoadMoreButton index="puns"}}
