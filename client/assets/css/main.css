@@ -328,6 +328,9 @@ body {
 .title {
   float: left; }
 
+.search-link {
+  color: white; }
+
 .btn {
   padding: .5rem 1rem;
   border: 0;
