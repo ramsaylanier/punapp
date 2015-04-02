@@ -3,6 +3,14 @@
 		<div class="page-header">
 			<h1 class="page-title">Recent Puns</h1>
 		</div>
-		{{> punsList_public}}
+		
+		<ul class="pun-list public-list">
+			{{#each puns}}
+				{{>punSingle context}}
+			{{/each}}
+		</ul>
+
+		<button class="show-more-awards">Show More Puns</button>
+		
 	{{/page}}
 </template>

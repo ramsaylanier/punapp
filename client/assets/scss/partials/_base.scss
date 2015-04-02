@@ -15,14 +15,18 @@ body{
 	list-style: none;
 	padding: 0;
 	.pun{
+		position: relative;
 		padding: 1rem;
-		background-color: darken(white, 10%);
+		background-color: white;
 		margin-bottom: 1rem;
+		display: flex;
+		align-items: center;
 	}
 }
 
 .pun-content{
 	margin: 0;
+	flex: 1 90%;
 }
 
 .pun-author{
@@ -30,6 +34,44 @@ body{
 	border-bottom: 2px solid $red;
 }
 
+.pun-date{
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: .5rem;
+	background-color: darken(white, 7%);
+	flex: 1 10%;
+
+}
+
 .title{
 	float: left;
+}
+
+.category-list{
+	margin-top: .5rem;
+	li{
+		background-color: darken(white, 7%);
+		display: inline-block;
+		font-size: .8rem;
+		margin-right: .25rem;
+		transition: background-color 150ms ease-out;
+
+		&:hover{
+			background-color: $red;
+
+			a{
+				color: white;
+			}
+		}
+
+		a{
+			padding: .5rem .5rem;
+			display: block;
+			width: 100%;
+			height: 100%;
+			transition: color 150ms ease-out;
+		}
+
+	}
 }

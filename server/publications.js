@@ -6,9 +6,9 @@ Meteor.publish('publicPuns', function(limit, category){
 
 	var query = {};
 
-	if (category){
+	if (category !== null){
 		query = {categories: category}
 	}
 
-	return Puns.find(query, {sort: {punCreatedAt: -1}, limit: 25})
+	return Puns.find(query, {sort: {'punCreatedAt._d': -1}, limit: limit})
 })

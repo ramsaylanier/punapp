@@ -22,19 +22,3 @@ Template.donutHeader.onRendered(function(){
 	animationType = options.animateIn || 'slideInFromRight';
 	donutAnimation.findAnimation(options, animationType, header);
 });
-
-// Template.donutHeader.events({
-// 	'click .transition-link': function(e, template){
-// 		e.preventDefault();
-// 		var data = template.data;
-// 		var url = $(e.currentTarget).attr('href');
-
-// 		//close menu if it's open
-// 		if (Session.get('shelfState') !== 'notActive'){
-// 			donutStates.closeShelfState();
-// 		}
-
-// 		animationType = data.animateOut || 'slideOutToLeft';
-// 		donutAnimation.findAnimation(options, animationType, page, url);
-// 	}
-// })

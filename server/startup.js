@@ -20,10 +20,13 @@ Meteor.startup(function(){
 
 		while(counter < 300){
 			console.log(counter);
+
+			var date = randomDate(new Date(2012, 0, 1), new Date());
+
 			Factory.create('pun', {
 				username: Fake.user({fields: ['username']}).username,
 				punText: Fake.paragraph(1),
-				punCreatedAt: randomDate(new Date(2012, 0, 1), new Date()),
+				punCreatedAt: moment(date),
 				categories: [Fake.fromArray(['dadjoke', 'pants', 'cats', 'dogs', 'fartjokes'])]
 			});
 
