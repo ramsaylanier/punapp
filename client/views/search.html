@@ -1,19 +1,29 @@
 <template name="search">
-    {{> esInput index="puns" placeholder="Search..." }}
+    {{#page pageOptions}}
+        <div class="page-header">
+            <h1 class="page-title">Search</h1>
+        </div>
 
-    <ul>
-        {{#esEach index="puns"}}
-            {{> punSingle}}
-        {{/esEach}}
-    </ul>
+        <ul class="pun-list">
+            <li class="pun">
+                <p class="pun-content">
+                    {{> esInput index="puns" placeholder="Search..." class="search-bar" }}
+                </p>
+            </li>
 
-    {{> esLoadMoreButton index="puns"}}
+            {{#esEach index="puns"}}
+                {{> punSingle}}
+            {{/esEach}}
+            
+            {{> esLoadMoreButton index="puns"}}
 
-    {{#ifEsHasNoResults index="puns"}}
-        <div class="no-results">No results found!</div>
-    {{/ifEsHasNoResults}}
+            {{#ifEsHasNoResults index="puns"}}
+                <!-- <li class="pun"><p class="pun-content">-</p></li> -->
+            {{/ifEsHasNoResults}}
 
-    {{#ifEsIsSearching index="puns"}}
-            <div>Loading...</div>
-    {{/ifEsIsSearching}}
+            {{#ifEsIsSearching index="puns"}}
+                <li class="pun"><p class="pun-content">Loading...</p></li>
+            {{/ifEsIsSearching}}
+        </ul>
+    {{/page}}
 </template>
