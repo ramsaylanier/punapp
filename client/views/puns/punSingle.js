@@ -16,6 +16,12 @@ Template.punSingle.helpers({
 	},
 	punCreatedAt: function(){
 		return moment(this.punCreatedAt._d).format("MMM Do, YYYY");
+	},
+	favLink: function(){
+		return "https://twitter.com/intent/favorite?tweet_id="+this.tweetId
+	},
+	rtLink: function(){
+		return "https://twitter.com/intent/retweet?tweet_id="+this.tweetId
 	}
 })
 
