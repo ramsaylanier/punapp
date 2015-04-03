@@ -2,7 +2,7 @@
 	{{#page pageOptions}}
 		<div class="page-header">
 			<h1 class="page-title"><a href="http://twitter.com/{{username}}" target="_blank">@{{username}}</a></h1>
-			<button class="page-cta btn primary-btn get-user-tweets-btn">Refresh Puns</button>
+			<button class="btn refresh-btn get-user-tweets-btn">{{> refreshIcon}}</button>
 		</div>
 
 		{{#if puns}}

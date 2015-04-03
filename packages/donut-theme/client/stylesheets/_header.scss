@@ -4,10 +4,10 @@
 	opacity: 0;
 	top: 0;
 	width: 100vw;
+	height: 35px;
 	background-color: white;
 	backface-visibility: hidden;
 	background-color: black;
-	padding: 1rem;
 }
 
 .branding{
@@ -28,10 +28,17 @@
 	color: black;
 	padding: 10px;
 	background-color:white;
-
+	display: flex;
 }
 
 .account-link{
 	color: white;
 	text-decoration: none;
+	padding: 0rem .5rem;
+	float: left;
+
+	&:first-of-type{
+		border-right: 2px solid white;
+	}
+	
 }

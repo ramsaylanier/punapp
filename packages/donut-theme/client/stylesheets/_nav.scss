@@ -1,6 +1,16 @@
 .nav{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	float: left;
+
+	&.nav-left{
+		padding-left: 1rem;
+	}
+
 	&.nav-right{
 		float: right;
 		color: white;
+		padding-right: 1rem;
 	}
 }

@@ -11,6 +11,10 @@ body{
 	font-family: $copy;
 }
 
+.application{
+	perspective: 2000;
+}
+
 .pun-list{
 	list-style: none;
 	padding: 0;
@@ -51,6 +55,7 @@ body{
 
 .category-list{
 	margin-top: .5rem;
+
 	li{
 		background-color: darken(white, 7%);
 		display: inline-block;
@@ -75,6 +80,8 @@ body{
 		}
 
 	}
+}
+
 .search-link{
-	color:white;
+	color: white;
 }

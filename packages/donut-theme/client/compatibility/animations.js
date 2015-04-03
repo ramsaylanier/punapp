@@ -15,43 +15,7 @@ var swingIn = function(element){
 	element.velocity({
 		"rotateX": '0deg',
 		opacity: 1
-	}, {duration: 2000, easing: [500, 25],})
-
-	// element.velocity({
-	// 	rotateX: '-90deg'
-	// }, 0).
-	// velocity({
-	// 	rotateX: '25deg',
-	// 	opacity: 1
-	// }, 300, "easeOut").
-	// velocity({
-	// 	rotateX: '-20deg',
-	// 	opacity: 1
-	// }, 250, "easeOut").
-	// velocity({
-	// 	rotateX: '15deg',
-	// 	opacity: 1
-	// }, 200, "easeOut").
-	// velocity({
-	// 	rotateX: '-10deg',
-	// 	opacity: 1
-	// }, 150, "easeOut").
-	// velocity({
-	// 	rotateX: '5deg',
-	// 	opacity: 1
-	// }, 100, "easeOut").
-	// velocity({
-	// 	rotateX: '-3deg',
-	// 	opacity: 1
-	// }, 100, "easeOut").
-	// velocity({
-	// 	rotateX: '2deg',
-	// 	opacity: 1
-	// }, 50, "easeOut").
-	// velocity({
-	// 	rotateX: '0deg',
-	// 	opacity: 1
-	// }, 25, "easeOut");
+	}, {duration: 2000, easing: [3000, 30],})
 }
 
 var twistIn = function(element){

@@ -4,7 +4,9 @@
 </head>
 
 <template name="layout">
-	{{> header}}
-	{{> yield}}
-	{{> errors}}
+	<div class="application">
+		{{> header}}
+		{{> yield}}
+		{{> errors}}
+	</div>
 </template>
