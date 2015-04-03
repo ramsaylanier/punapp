@@ -13,7 +13,7 @@ Template.userPuns.events({
 		}, {duration: 1000, easing: 'linear', loop: true});
 
 		icon.velocity({
-			scale: 1.8,
+			scale: 1.3,
 		}, 1000, [1000, 30]);
 
 		Meteor.setTimeout(function(){
@@ -46,11 +46,11 @@ Template.userPuns.events({
 			arrow.velocity('stop');
 
 			arrow.velocity({
-				scale: .8
+				scale: .9
 			}, 1000, [1000, 30]);
 
 			icon.velocity({
-				scale: 1.8
+				scale: 1.3
 			}, 1000, [1000, 30]);
 		} else {
 			return false;
