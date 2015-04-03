@@ -21,7 +21,7 @@ Template.userPuns.events({
 				if (error){
 					Errors.throw(error.reason, 'error')
 				} else {
-					$(e.currentTarget).removeClass('loading');
+					$(e.currentTarget).removeClass('loading').blur();
 
 					arrow.velocity("stop");
 
